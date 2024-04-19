@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap">
+    <script src="script.js" defer></script>
+    <meta name="description" content="Hello, I am a front-end developer and this is my personal website.">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-full h-full">
+    <nav class="flex flex-col items-center fixed w-full backdrop-blur-sm">
+        <div class="nav">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="mobilenav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <section class="w-screen h-screen flex items-center justify-center" id="about">
+            <div class="flex items-center justify-center flex-col text-center">
+                <h1 class="text-5xl mb-6"><span id="wave" title="Hello!">👋</span> Hello! I'm Ryan.</h1>
+                <p class="description w-1/2">I am a front-end developer with a passion for creating beautiful and user-friendly websites. I have experience with HTML, CSS, JavaScript, React, TailwindCSS, and NextJS.</p>
+            </div>
+        </section>
+        <section class="w-screen h-screen flex items-center justify-center flex-col" id="projects">
+            <h1 class="text-4xl mb-6">Projects</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center">
+                <div class="project-card">
+                    <a href="https://fluidclient.ovh"><img src="./fluidclient.png" alt="Fluid Client website" class="project-image" width="300" height="300"></a>
+                    <h2 class="project-title text-2xl mt-3">Fluid Client website</h2>
+                    <p class="project-description">Fluid Client is a Minecraft PvP client.</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://spetterman66.github.io"><img src="./spetterman66.png" alt="spetterman66.github.io" class="project-image" width="300" height="300"></a>
+                    <h2 class="project-title text-2xl mt-3">spetterman66.github.io</h2>
+                    <p class="project-description">A nice example of my UI design skills.</p>
+                </div>
+                <div class="project-card">
+                    <a href="https://plant-watering-game.vercel.app"><img src="./plant-watering-game.png" alt="Plant Watering Game" class="project-image" width="300" height="300"></a>
+                    <h2 class="project-title text-2xl mt-3">Plant Watering Game</h2>
+                    <p class="project-description">Take care of a virtual plant by watering it.</p>
+                </div>
+        </section>
+        <section class="w-screen h-screen flex items-center justify-center flex-col" id="contact">
+            <h1 class="text-4xl mb-6">Contact</h1>
+            <p class="description">You can contact me by sending an email to <a href="mailto:17lifers@proton.me" class="blue">17lifers@proton.me</a>.</p>
+            <p>You can also send a DM to <a href="https://instagram.com/17lifersgang52" class="blue">@17lifersgang52</a> on Instagram.</p>
+        </section>
+    </main>
+</body>
+
+</html>
